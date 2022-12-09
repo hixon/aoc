@@ -10,18 +10,21 @@ namespace AdventOfCode2022
     {
         public static void Output()
         {
+            const string test = "Day9_Test.txt";
+            const string prod = "Day9.txt";
+
             Console.WriteLine("Day 9");
             Console.WriteLine("Part 1");
-            Console.WriteLine(Part1_Test());
-            //Console.WriteLine(Part1());
+            Console.WriteLine(Part1_Test(test));
+            //Console.WriteLine(Part1(prod));
             //Console.WriteLine("\nPart 2");
-            //Console.WriteLine(Part2_Test());
-            //Console.WriteLine(Part2());
+            //Console.WriteLine(Part2_Test(test));
+            //Console.WriteLine(Part2(prod));
         }
 
-        public static string Part1_Test()
+        public static string Part1_Test(string file)
         {
-            var input = File.ReadAllLines(@"D:/Projects/AdventOfCode2022/AdventOfCode2022/InputFiles/Day9_Test.txt");
+            var input = Utils.OpenFile(file);
 
             //var output = FindValidTrees(input);
 

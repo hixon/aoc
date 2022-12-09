@@ -10,45 +10,48 @@ namespace AdventOfCode2022
     {
         public static void Output()
         {
+            const string test = "Day8_Test.txt";
+            const string prod = "Day8.txt";
+
             Console.WriteLine("Day 8");
             Console.WriteLine("Part 1");
-            Console.WriteLine(Part1_Test());
-            Console.WriteLine(Part1());
+            Console.WriteLine(Part1_Test(test));
+            Console.WriteLine(Part1(prod));
             Console.WriteLine("\nPart 2");
-            Console.WriteLine(Part2_Test());
-            Console.WriteLine(Part2());
+            Console.WriteLine(Part2_Test(test));
+            Console.WriteLine(Part2(prod));
         }
 
-        public static string Part1_Test()
+        public static string Part1_Test(string file)
         {
-            var input = File.ReadAllLines(@"D:/Projects/AdventOfCode2022/AdventOfCode2022/InputFiles/Day8_Test.txt");
+            var input = Utils.OpenFile(file);
 
             var output = FindValidTrees(input);
 
             return "# Visible Spots: " + output;
         }
 
-        public static string Part1()
+        public static string Part1(string file)
         {
-            var input = File.ReadAllLines(@"D:/Projects/AdventOfCode2022/AdventOfCode2022/InputFiles/Day8.txt");
+            var input = Utils.OpenFile(file);
 
             var output = FindValidTrees(input);
 
             return "# Visible Spots: " + output;
         }
 
-        public static string Part2_Test()
+        public static string Part2_Test(string file)
         {
-            var input = File.ReadAllLines(@"D:/Projects/AdventOfCode2022/AdventOfCode2022/InputFiles/Day8_Test.txt");
+            var input = Utils.OpenFile(file);
 
             var output = GetHighestScenicScore(input);
 
             return "# Visible Spots: " + output;
         }
 
-        public static string Part2()
+        public static string Part2(string file)
         {
-            var input = File.ReadAllLines(@"D:/Projects/AdventOfCode2022/AdventOfCode2022/InputFiles/Day8.txt");
+            var input = Utils.OpenFile(file);
 
             var output = GetHighestScenicScore(input);
 

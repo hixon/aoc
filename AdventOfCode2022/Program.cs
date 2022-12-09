@@ -8,5 +8,5 @@ using AdventOfCode2022;
 //Day5.Output();
 //Day6.Output();
 //Day7.Output();
-//Day8.Output();
+Day8.Output();
 Day9.Output();
