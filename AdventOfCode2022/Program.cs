@@ -10,3 +10,4 @@ using AdventOfCode2022;
 //Day7.Output();
 //Day8.Output();
 Day9.Output();
+//Day10.Output();
